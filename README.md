@@ -14,19 +14,19 @@ This project demonstrates a simple RESTful API for task management using Java's 
 - `PUT /tasks/{id}`: Update a task by ID
 - `DELETE /tasks/{id}`: Delete a task by ID
 
-## How to Run
+# How to Run
 
-# Compile everything
+## Compile everything
 mvn compile
 
-# Run the server (from the project root directory)
+## Run the server (from the project root directory)
 java -jar target/restapi-1.0-SNAPSHOT.jar
 
 ## Using Postman to test the project
 
 This project uses JWT tokens for authentification:
 
-# First, get a token by logging in:
+### First, get a token by logging in:
 
 -Method: POST
 
@@ -39,7 +39,7 @@ This project uses JWT tokens for authentification:
        "password": "password123"
    }
 
-# For all other requests (GET, POST, PUT, DELETE), you need to:
+### For all other requests (GET, POST, PUT, DELETE), you need to:
 
 -Add the Authorization header
 
