@@ -26,17 +26,23 @@ java -jar target/restapi-1.0-SNAPSHOT.jar
 
 This project uses JWT tokens for authentification:
 
-First, get a token by logging in:
+# First, get a token by logging in:
+
 -Method: POST
+
 -URL: http://localhost:8081/auth/login
+
 -Body:
+
   {
        "username": "admin",
        "password": "password123"
    }
 
-For all other requests (GET, POST, PUT, DELETE), you need to:
+# For all other requests (GET, POST, PUT, DELETE), you need to:
+
 -Add the Authorization header
+
 -Set its value to: Bearer YOUR_TOKEN (replace YOUR_TOKEN with the token you received from login)
 
 
