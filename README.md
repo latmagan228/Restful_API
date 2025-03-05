@@ -17,10 +17,10 @@ This project demonstrates a simple RESTful API for task management using Java's 
 # How to Run
 
 ## Compile everything
-mvn compile
+`mvn compile`
 
 ## Run the server (from the project root directory)
-java -jar target/restapi-1.0-SNAPSHOT.jar
+`java -jar target/restapi-1.0-SNAPSHOT.jar`
 
 ## Using Postman to test the project
 
@@ -42,6 +42,8 @@ This project uses JWT tokens for authentification:
 ### For all other requests (GET, POST, PUT, DELETE), you need to:
 
 -Add the Authorization header
+
+-URL: http://localhost:8081/tasks
 
 -Set its value to: Bearer YOUR_TOKEN (replace YOUR_TOKEN with the token you received from login)
 
